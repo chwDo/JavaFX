@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.MaincontrolController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="开始">
+            <items>
+              <MenuItem fx:id="startexam" mnemonicParsing="false" onAction="#startexam_clicked" text="开始考试" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="结束">
+            <items>
+              <MenuItem fx:id="endexam" mnemonicParsing="false" onAction="#endexam_clicked" text="提交试卷" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane prefHeight="375.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="typeLabel" layoutX="214.0" layoutY="11.0" text="(科目)考试">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="55.0" text="剩余时间：" textFill="RED">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeLabel" layoutX="463.0" layoutY="55.0" text="Label" textFill="RED">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="98.0" text="请选择题目类型">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <GridPane layoutY="188.0" prefHeight="30.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btn_xz" mnemonicParsing="false" onMouseClicked="#xz_clicked" text="选择题" />
+                  <Button fx:id="btn_tk" mnemonicParsing="false" onMouseClicked="#tk_clicked" text="填空题" GridPane.columnIndex="1" />
+                  <Button fx:id="btn_pd" mnemonicParsing="false" onMouseClicked="#pd_clicked" text="判断题" GridPane.columnIndex="2" />
+                  <Button fx:id="btn_jd" mnemonicParsing="false" onMouseClicked="#jd_clicked" text="简答题" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <Label layoutX="154.0" layoutY="297.0" text="请检查试卷所有试题完成，一旦提交试卷无法修改" textFill="#e80606">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_submit" layoutX="232.0" layoutY="232.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="151.0" text="提交试卷">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>

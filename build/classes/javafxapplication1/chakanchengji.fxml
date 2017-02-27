@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.ChakanchengjiController">
+   <children>
+      <Label layoutX="47.0" layoutY="37.0" text="查看成绩">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="showfield" editable="true" layoutX="59.0" layoutY="89.0" onInputMethodTextChanged="#ontextchanged" onScroll="#onsrolls" prefHeight="385.0" prefWidth="683.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="账户名" />
+          <TableColumn prefWidth="75.0" text="语文" />
+            <TableColumn prefWidth="75.0" text="数学" />
+            <TableColumn prefWidth="146.0" text="英语" />
+            <TableColumn prefWidth="146.0" text="物理" />
+            <TableColumn prefWidth="146.0" text="化学" />
+            <TableColumn prefWidth="146.0" text="生物" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</Pane>

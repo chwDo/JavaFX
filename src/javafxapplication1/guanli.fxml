@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.GuanliController">
+   <children>
+      <Label layoutX="41.0" layoutY="35.0" text="欢迎进入管理员系统" textFill="#255ab5">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="judge_jianda" layoutX="188.0" layoutY="189.0" mnemonicParsing="false" onMouseClicked="#pigai_clicked" text="批改简答题">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="view_score" layoutX="198.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#view_clicked" text="查看成绩">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="edit_exam" layoutX="450.0" layoutY="189.0" mnemonicParsing="false" onMouseClicked="#edit_clicked" text="题目编辑">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="make_paper" layoutX="450.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#paper_clicked" text="人工组卷">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

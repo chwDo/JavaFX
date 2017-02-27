@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.TiankongController">
+   <children>
+      <Button fx:id="next_question" layoutX="456.0" layoutY="395.0" mnemonicParsing="false" onMouseClicked="#next_clicked" text="下一题" />
+      <Button fx:id="pre_question" layoutX="281.0" layoutY="395.0" mnemonicParsing="false" onMouseClicked="#pre_clicked" text="上一题" />
+      <Label fx:id="l_context" layoutX="132.0" layoutY="114.0" maxWidth="500.0" text="Label">
+         <font>
+            <Font name="YouYuan" size="20.0" />
+         </font></Label>
+      <Label layoutX="52.0" layoutY="102.0" text="题目">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_index" layoutX="350.0" layoutY="53.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label layoutX="271.0" layoutY="45.0" text="题号">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="332.0" text="答案：">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answer_field" layoutX="139.0" layoutY="332.0" prefHeight="23.0" prefWidth="523.0" />
+      <Line endX="600.0" layoutX="132.0" layoutY="-6.0" startX="-100.0" />
+      <Label layoutX="32.0" layoutY="44.0" text="二、填空题">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="146.0" text="填空题序号">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="submit" layoutX="375.0" layoutY="395.0" mnemonicParsing="false" onMouseClicked="#sub_clicked" text="提交" />
+      <GridPane fx:id="preview" gridLinesVisible="true" layoutX="709.0" layoutY="170.0" prefHeight="173.0" prefWidth="63.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+            <Label text="   1" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" GridPane.rowIndex="1" />
+            <Label text="   2" GridPane.rowIndex="1" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" GridPane.rowIndex="2" />
+            <Label text="   3" GridPane.rowIndex="2" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" GridPane.rowIndex="3" />
+            <Label text="   4" GridPane.rowIndex="3" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" GridPane.rowIndex="4" />
+            <Label text="   5" GridPane.rowIndex="4" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" GridPane.columnIndex="1" />
+            <Label text="   6" GridPane.columnIndex="1" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="   7" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="   8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="   9" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" stroke="BLACK" strokeType="INSIDE" width="32.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="  10" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="55.0" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="10.0" prefWidth="50.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="128.0" minHeight="6.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="140.0" minHeight="7.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</Pane>
